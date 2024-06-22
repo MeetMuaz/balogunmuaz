@@ -1,0 +1,224 @@
+"use client"
+
+import Image from "next/image";
+import Link from "next/link";
+import { TypeAnimation } from 'react-type-animation';
+import './globals.css'
+
+
+export default function Home() {
+  return (
+    // main body
+    <main className="flex flex-col min-h-screen">
+      <div className="bg-[#0e0e0e] w-full p-16">
+        {/* navbar section */}
+      <nav className="flex justify-between h-24 items-center max-w-5xl w-full mx-auto">
+        {/* logo section */}
+        <div>
+        </div>
+
+        {/* navlink section */}
+        <ul className="flex space-x-2">
+          <li className="text-white text-sm border-b-2 border-transparent"><Link href='#'>About</Link></li>
+          <li className="text-white text-sm border-b-2 border-transparent"><Link href='#'>Skills</Link></li>
+          <li className="text-white text-sm border-b-2 border-transparent"><Link href='#'>Portfolio</Link></li>
+          <li className="text-white text-sm border-b-2 border-transparent"><Link href='#'>Reviews</Link></li>
+          <li className="text-white text-sm border-b-2 border-transparent"><Link href='#'>Blogs</Link></li>
+        </ul>
+
+        {/* contact section */}
+        <ul className="flex space-x-4 flex-row items-center">
+          <li>
+          <Link href='#'>
+            <button className="bg-[#383838] shadow-xl h-10 w-10 rounded-full flex justify-center items-center">
+            </button>
+          </Link>
+          </li>
+          <li>
+            <Link href='#'>
+            <button className="bg-red-500 px-4 py-3 rounded-full text-white text-sm">
+              Contact Me
+            </button>
+            </Link>
+          </li>
+        </ul>
+      </nav>
+
+      {/* header section */}
+      <header className="relative max-w-5xl w-full mx-auto h-[400px]">
+        <div className="absolute left-0 top-[100px]">
+          <span className="bg-clip-text bg-gradient-to-r from-[#979A95] to-[#E7F2E5] text-6xl font-black text-transparent">BALOGUN</span><br />
+          <span className="bg-clip-text bg-gradient-to-r from-[#979A95] to-[#E7F2E5] text-6xl font-black text-transparent">MUAZ</span>
+        </div>
+        <div className="absolute right-[150px] bottom-[50px] max-w-[260px]">
+        <TypeAnimation
+            sequence={[
+              'Software Engineer', 
+              1500, 
+              'Project Manager', 
+              3000, 
+              'Community Manager',
+              4500, 
+              'Course Creator',
+              () => {
+                // console.log('Sequence completed');
+              },
+            ]}
+            wrapper="span"
+            cursor={true}
+            repeat={Infinity}
+            className="bg-clip-text bg-gradient-to-r from-sky-300 to-sky-700 text-5xl font-bold text-transparent"
+          />
+        </div>
+      </header>
+      </div>
+
+      <div className="w-full p-16">
+        {/* skills section */}
+      <section className="relative max-w-5xl w-full mx-auto grid grid-cols-2 gap-3">
+        <div className="space-y-3">
+          <div className="border-[0.1px] border-slate-300 rounded-md h-16 w-96 relative rotate-6 mb-8">
+            <div className="h-10 w-8 absolute right-6 bg-neutral-500 rounded-b-sm">
+              <span className="absolute left-2 text-white top-2 text-xs">24</span>
+              <span className="h-3 w-3 absolute rounded-sm bg-gradient-to-r from-indigo-400 to-cyan-400 top-6 left-[9px]"></span>
+            </div>
+            <div className="bg-gradient-to-r from-indigo-400 to-cyan-400 h-9 w-9 rounded-lg top-3 left-3 absolute flex justify-center items-center text-xl">🧑‍💻</div>
+            <div className="absolute left-16 top-4">
+                <span className="block text-sm text-white">Software Engineering</span>
+                <span className="block text-xs text-white">I build website and mobile applications</span>
+              </div>
+          </div>
+          <div className="border-[0.1px] border-slate-300 rounded-md h-16 w-96 relative">
+            <div className="h-10 w-8 absolute right-6 bg-neutral-500 rounded-b-sm">
+              <span className="absolute left-2 text-white top-2 text-xs">24</span>
+              <span className="h-3 w-3 absolute rounded-sm bg-gradient-to-r from-indigo-400 to-cyan-400 top-6 left-[9px]"></span>
+            </div>
+            <div className="bg-gradient-to-r from-indigo-400 to-cyan-400 h-9 w-9 rounded-lg top-3 left-3 absolute  flex justify-center items-center text-xl">👨‍👧‍👦</div>
+            <div className="absolute left-16 top-4">
+                <span className="block text-sm text-white">Project Manager</span>
+                <span className="block text-xs text-white">I manage projects</span>
+              </div>
+          </div>
+          <div className="border-[0.1px] border-slate-300 rounded-md h-16 w-96 relative">
+            <div className="h-10 w-8 absolute right-6 bg-neutral-500 rounded-b-sm">
+              <span className="absolute left-2 text-white top-2 text-xs">24</span>
+              <span className="h-3 w-3 absolute rounded-sm bg-gradient-to-r from-indigo-400 to-cyan-400 top-6 left-[9px]"></span>
+            </div>
+            <div className="bg-gradient-to-r from-indigo-400 to-cyan-400 h-9 w-9 rounded-lg top-3 left-3 absolute  flex justify-center items-center text-xl">📄</div>
+            <div className="absolute left-16 top-4">
+                <span className="block text-sm text-white">Community Manager</span>
+                <span className="block text-xs text-white">fjjfjjgu kkkkfkf juu iiei</span>
+              </div>
+          </div>
+          <div className="border-[0.1px] border-slate-300 rounded-md h-16 w-96 relative">
+            <div className="h-10 w-8 absolute right-6 bg-neutral-500 rounded-b-sm">
+              <span className="absolute left-2 text-white top-2 text-xs">24</span>
+              <span className="h-3 w-3 absolute rounded-sm bg-gradient-to-r from-indigo-400 to-cyan-400 top-6 left-[9px]"></span>
+            </div>
+            <div className="bg-gradient-to-r from-indigo-400 to-cyan-400 h-9 w-9 rounded-lg top-3 left-3 absolute  flex justify-center items-center text-xl">📽️</div>
+            <div className="absolute left-16 top-4">
+                <span className="block text-sm text-white">Content Creator</span>
+                <span className="block text-xs text-white">fjjfjjgu kkkkfkf juu iiei</span>
+              </div>
+          </div>
+        </div>
+        <div>
+          <span className="text-base text-blue-900 block">My Skills</span>
+          <span className="text-xl text-white mt-3 block">Why Hire Me <br /> For Your Next Project?</span>
+          <span className="text-sm text-slate-300 block mt-6 max-w-96">lorem jjfkkfn jkjkdj hhehdnm uoiopoe jfjm jfjfjf ojdjkbd buee uejjej hd  jeieiie jeipww iekje jwjepie gfghfz ytbn hjj hfhhr ooih rhhrh</span>
+          <Link href=''>
+            <button className="bg-red-500 px-4 py-3 rounded-full text-white text-sm mt-6">
+              Download My CV
+            </button>
+          </Link>
+        </div>
+      </section>
+
+      </div>
+
+      <div className="w-full p-16">
+        <section className="relative max-w-5xl w-full mx-auto">
+          <span className="text-base text-blue-900 block text-center">Portfolio</span>
+          <span className="text-xl text-white mt-3 block text-center">All Creative Works, Selected <br /> Projects</span>
+
+          <ul className="flex justify-center space-x-4 mt-3">
+            <li>
+              <button className="text-slate-300 text-sm">Frontend</button>
+            </li>
+            <li>
+              <button className="text-slate-300 text-sm">Backend</button>
+            </li>
+            <li>
+              <button className="text-slate-300 text-sm">Mobile</button>
+            </li>
+            <li>
+              <button className="text-slate-300 text-sm">Courses</button>
+            </li>
+          </ul>
+
+          <div className="grid grid-cols-3 gap-5 mt-8">
+           
+
+          <div className="group relative cursor-pointer items-center justify-center overflow-hidden border-[0.3px] border-slate-400 rounded-md h-80 w-80">
+  <div className="relative w-full h-full">
+    <Image src={'/group-1.jpg'} fill className="object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"/>
+    <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300 ease-in-out"></div>
+  </div>
+  <div className="absolute bottom-0 left-0 w-full h-0 group-hover:h-28 bg-gradient-to-r from-gray-700 to-black rounded-t-lg transition-all duration-300 ease-in-out">
+    <div className="absolute left-4 top-4 py-1 px-3 bg-gradient-to-r from-slate-900 to-slate-700 text-white text-xs rounded inline-block">Web Desing</div>
+    <div className="absolute left-4 top-12   text-md rounded inline-block bg-clip-text text-blue-500">Dark Themed Website</div>
+  </div>
+</div>
+<div className="group relative cursor-pointer items-center justify-center overflow-hidden border-[0.3px] border-slate-400 rounded-md h-80 w-80">
+  <div className="relative w-full h-full">
+    <Image src={'/group-2.jpg'} fill className="object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"/>
+    <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300 ease-in-out"></div>
+  </div>
+  <div className="absolute bottom-0 left-0 w-full h-0 group-hover:h-28 bg-gradient-to-r from-gray-700 to-black rounded-t-lg transition-all duration-300 ease-in-out">
+    <div className="absolute left-4 top-4 py-1 px-3 bg-gradient-to-r from-slate-900 to-slate-700 text-white text-xs rounded inline-block">Web Desing</div>
+    <div className="absolute left-4 top-12   text-md rounded inline-block bg-clip-text text-blue-500">Dark Themed Website</div>
+  </div>
+</div>
+<div className="group relative cursor-pointer items-center justify-center overflow-hidden border-[0.3px] border-slate-400 rounded-md h-80 w-80">
+  <div className="relative w-full h-full">
+    <Image src={'/group-3.jpg'} fill className="object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"/>
+    <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300 ease-in-out"></div>
+  </div>
+  <div className="absolute bottom-0 left-0 w-full h-0 group-hover:h-28 bg-gradient-to-r from-gray-700 to-black rounded-t-lg transition-all duration-300 ease-in-out">
+    <div className="absolute left-4 top-4 py-1 px-3 bg-gradient-to-r from-slate-900 to-slate-700 text-white text-xs rounded inline-block">Web Desing</div>
+    <div className="absolute left-4 top-12   text-md rounded inline-block bg-clip-text text-blue-500">Dark Themed Website</div>
+  </div>
+</div>
+
+
+
+
+
+           
+          </div>
+        </section>
+      </div>
+
+      <div className="w-full p-16">
+      <div class="mx-auto items-center justify-center max-w-3xl w-full">
+  <div class="h-72 w-full rounded-md bg-gradient-to-r from-gray-100 to-gray-300 p-[0.8px] relative">
+    <div class="flex h-full w-full items-center justify-center bg-[#212121] rounded-md">
+
+    </div>
+    <div class="absolute h-80 w-96 bg-gray-700 rounded-xl -top-4 left-0 overflow-hidden">
+    <Image src={'/person-2.jpg'} fill className="object-cover"/>
+    </div>
+    <div className="absolute top-8 left-[26rem]">
+      <p className="text-white text-sm">life jdjhsfuhud   dbuheh bufbuhuh sbiuhsduohhajahkaaaaah;;;;;;;;;;; hghhg hghghfh gy hgnjngj h g dhgj  jhdjjjhd hfghhffh dfd hahj;hahasdfjkl jfjjjjjjfj jjjjf  jjjfjuk lujjjf ufj jj dfufjj jfd ujfjjf ufjf j jf dukukfjjf uklufjj fuujdfjd ffjdfuuklfjf ljf jjf u j jdj fujldf jlf ukjf jlf ujfjjfjfuk ufj</p>
+      <p className="text-blue-400 text-lg mt-3">Jessy Pitman</p>
+      <p className="text-white text-md mt-2">CEO of Meduim</p>
+    </div>
+  </div>
+</div>
+
+      </div>
+    </main>
+  );
+}
+
+

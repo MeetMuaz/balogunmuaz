@@ -1,9 +1,40 @@
-import Image from "next/image";
+// custom components
+import Head from "next/head";
+import Navbar from "./component/Navbar";
+import ProjectCard from "./component/ProjectCard";
+import Footer from "./component/Footer";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
+    <main className="flex min-h-screen flex-col items-center justify-between">
+      <Navbar />
+      <ProjectCard />
+      <ProjectCard />
+      <ProjectCard />
+      <ProjectCard />
+      <Footer />
+    </main>
+  );
+}
+
+// outlineoffset: -1px,
+//     background-color: rgba(242, 242, 242, .04),
+//     border-radius: 24px;
+//     outline: 1px solid rgba(242, 242, 242, .05),
+//     align-self: stretch,
+//     padding: 8px,
+//     position: relative,
+//     box-shadow: 0 40px 80px rgba(0, 0, 0, .5)
+
+// {/* big card */}
+// <div className="flex items-center justify-center h-[600px] w-[800px] mx-auto rounded-2xl bg-[#0a0a0a] border border-gradient-to-r from-blue-500 via-green-500 to-pink-500 p-[5px] shadow-2xl">
+// <div className="h-full w-full rounded-2xl border border-slate-200 bg-[#212121]">
+//   {/* Your content here */}
+// </div>
+// </div>
+
+{
+  /* <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
         <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
           Get started by editing&nbsp;
           <code className="font-mono font-bold">src/app/page.js</code>
@@ -107,7 +138,5 @@ export default function Home() {
             Instantly deploy your Next.js site to a shareable URL with Vercel.
           </p>
         </a>
-      </div>
-    </main>
-  );
+      </div> */
 }
