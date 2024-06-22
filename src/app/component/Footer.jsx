@@ -16,7 +16,7 @@ export default function Footer() {
           <ul className="space-y-6">
             <li className="text-[9px] text-[#BCBCBC]">MAIN</li>
             <li className="text-[#f2f2f2] text-[16px]">
-              <Link href="/work">Work</Link>
+              <Link href="/">Work</Link>
             </li>
             <li className="text-[#f2f2f2] text-[16px]">
               <Link href="/info">Info</Link>

@@ -7,7 +7,7 @@ export default function Navbar() {
     <div className="flex items-center justify-between w-full mb-5 pt-16 px-16">
       <ul>
         <li>
-          <Link href="#">
+          <Link href="/">
             <div className="flex space-x-2">
               <Image height="48" width="48" src="/logo.svg" alt="logo" />
               <div className="flex flex-col">
@@ -27,11 +27,11 @@ export default function Navbar() {
         boxShadow: "0 40px 80px rgba(0, 0, 0, .5)",
         position: "relative",
       }}>
-        <li className="text-[#f2f2f2] text-[14px] px-4 py-2 rounded-full hover:bg-[#333]">
-          <Link href="#">Work</Link>
+        <li>
+          <Link className="text-[#f2f2f2] text-[14px] px-4 py-2 rounded-full hover:bg-[#333]" href="/">Work</Link>
         </li>
-        <li className="text-[#f2f2f2] text-[14px] px-4 py-2 rounded-full hover:bg-[#333]">
-          <Link href="#">Info</Link>
+        <li>
+          <Link className="text-[#f2f2f2] text-[14px] px-4 py-2 rounded-full hover:bg-[#333]" href="/info">Info</Link>
         </li>
       </ul>
       <ul className="flex space-x-4">
