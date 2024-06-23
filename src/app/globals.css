@@ -27,3 +27,7 @@ body {
 .hover-card-4 {
   background-image: radial-gradient(circle at 50% 0, rgba(127, 255, 207, .2), rgba(0, 0, 0, 0) 80%), radial-gradient(circle at 50% 0, #053, rgba(0, 0, 0, 0));
 }
+
+.about-me-desing-text{
+  font-family: 'Gloock', sans-serif;
+}

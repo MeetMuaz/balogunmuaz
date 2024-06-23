@@ -1,4 +1,4 @@
-"use client"
+"use client";
 "use client";
 import React, { useState } from "react";
 import "./ProjectCard.css";
@@ -17,11 +17,12 @@ export default function ProjectCard({ hoverCardProp }) {
         boxShadow: "0 40px 80px rgba(0, 0, 0, .5)",
         position: "relative",
       }}
+      // this allows the mouse to color gradient change over mouse effect
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
       <div
-        className={`w-full h-full rounded-2xl ${isHovered ? hoverCardProp : 'normal-card' }`}
+        className={`w-full h-full rounded-2xl ${isHovered ? hoverCardProp : "normal-card"}`}
         style={{
           opacity: 1,
           outlineOffset: "-1px",

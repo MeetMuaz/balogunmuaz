@@ -26,13 +26,19 @@ export default function Footer() {
           <ul className="space-y-6">
             <li className="text-[9px] text-[#BCBCBC]">CONTACT</li>
             <li className="text-[#f2f2f2] text-[16px]">
-              <Link href="https://linkedin.com/in/meetmuaz" className="flex items-center">
+              <Link
+                href="https://linkedin.com/in/meetmuaz"
+                className="flex items-center"
+              >
                 <span className="mr-1">Linkedin</span>
                 <BsArrowUpRight />
               </Link>
             </li>
             <li className="text-[#f2f2f2] text-[16px]">
-              <Link href="https://drive.google.com/file/d/1shYcvHnLDqW9uNrD0bHGImQQ-hmF6fME/view?usp=sharing" className="flex items-center">
+              <Link
+                href="https://drive.google.com/file/d/1shYcvHnLDqW9uNrD0bHGImQQ-hmF6fME/view?usp=sharing"
+                className="flex items-center"
+              >
                 <span className="mr-1">Resume </span>
                 <BsArrowUpRight />
               </Link>
@@ -47,7 +53,7 @@ export default function Footer() {
             © 2024 Balogun Muaz. All Rights Reserved.
           </span>
           <span className="text-[14px] text-[#BCBCBC] block">
-          Made with a 😊 and Cocoa Teas (50% sugar, hot water).
+            Made with a 😊 and Cocoa Teas (50% sugar, hot water).
           </span>
         </div>
         <div>
