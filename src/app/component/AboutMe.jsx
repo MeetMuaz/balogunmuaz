@@ -22,7 +22,7 @@ export default function AboutMe() {
               "0 4px 6px rgba(0, 87, 255, .15), 0 -4px 6px rgba(255, 90, 0, .1), 0 0 20px rgba(255, 255, 255, .25)",
           }}
         >
-          impactful mobile applications.
+          impactful software applications.
         </span>
       </h1>
     </div>
